@@ -1,14 +1,23 @@
-<!-- views/fruits/new.ejs -->
-
-<body>
-    <h1>add a New clothes!</h1>
-    <form action="/clothes" method="POST">
-      <label for="type">Type:</label>
-      <input type="text" name="type" id="type" />
-  
-      <label for="available">is it available?</label>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/clothes">All Clothes</a>
+    <h1>Create a new Clothe</h1>
+    <form action="/clothes" method="post">
+      <label for="name">type:</label>
+      <input type="text" name="name" id="name" />
+      <br />
+      <br />
+      <label for="available">available?</label>
       <input type="checkbox" name="available" id="available" />
-  
-      <button type="submit">Add Fruit</button>
+      <br />
+      <br />
+      <button type="submit">Add Clothes</button>
     </form>
   </body>
+</html>

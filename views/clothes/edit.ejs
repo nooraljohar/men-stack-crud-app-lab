@@ -1,0 +1,16 @@
+<body>
+    <h1>Edit <%= clothe.name %></h1>
+    <form action="/clothes/<%= clothe._id %>?_method=PUT" method="post">
+      <label for="name">type:</label>
+      <input type="text" name="name" id="name" value="<%= clothe.name %>" />
+      <br />
+      <label for="available">available?</label>
+      <input
+        type="checkbox"
+        name="available"
+        id="available"
+        <%  if(clothe.available){%>checked <%} %> />
+      <br />
+      <button type="submit">Update clothes</button>
+    </form>
+  </body>

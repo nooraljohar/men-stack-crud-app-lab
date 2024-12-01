@@ -1,0 +1,12 @@
+<body>
+    <h1><%= clothe.name %></h1>
+    <% if(clothe.available){%>
+    <p>This clothe available</p>
+    <%}else {%>
+    <p>This clothe not available</p>
+    <%} %>
+    <form action="/clothes/<%= clothe._id %>?_method=DELETE" method="post">
+      <button type="submit">Delete <%= clothe.name %></button>
+    </form>
+    <a href="/clothes/<%= clothe._id %>/edit">Edit <%= clothe.name %></a>
+  </body>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/clothes/new"> Add New clothes</a>
+    <h1>All Clothes</h1>
+    <ul>
+      <% clothes.forEach(clothe => {%>
+      <a href="/clothes/<%= clothe._id %>">
+        <li><%= clothe.type %></li>
+      </a>
+      <%}); %>
+    </ul>
+  </body>
+</html>
