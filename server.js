@@ -16,7 +16,7 @@ mongoose.connection.on("connected", () => {
   console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
 
-const Clothes = require('./models/clothing')
+const Clothe = require('./models/clothes')
 
 //it tell the system to expect a data in text form instead of json
 app.use(express.urlencoded({ extended: false }))
